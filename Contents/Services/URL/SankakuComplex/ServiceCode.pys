@@ -1,0 +1,8 @@
+def MetadataObjectForURL(url):
+    return PhotoObject(title="na", summary="na")
+
+def MediaObjectsForURL(url):
+    return [MediaObject(parts=[PartObject(key=Callback(GetImage, url=url))])]
+
+def GetImage(url):
+    return Redirect(url)

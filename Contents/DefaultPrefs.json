@@ -1,0 +1,63 @@
+[
+    {
+        "id":           "username",
+        "label":        "Username",
+        "type":         "text"
+    },
+    {
+        "id":           "password",
+        "label":        "Password",
+        "type":         "text",
+        "option":       "hidden",
+        "secure":       "true"
+    },        
+    {
+        "id":           "rating",
+        "label":        "Rating",
+        "type":         "enum",
+        "values":       ["rating:safe", "rating:questionable", "rating:explicit", "all"],
+        "default":      "rating:safe"
+    },
+    {
+        "id":           "imagesize",
+        "label":        "Full Size Images",
+        "type":         "bool",
+        "default":      "true"
+    },
+    {
+        "id":           "limit",
+        "label":        "Post Retrieval Limit",
+        "type":         "enum",
+        "values":       ["10", "20", "30", "40", "50", "60", "70", "80", "90", "100"],
+        "default":      "50"
+    },
+    {
+        "id":           "threshold_enabled",
+        "label":        "Enable Score Threshold",
+        "type":         "bool",
+        "default":      "false"
+    },        
+    {
+        "id":           "score_threshold",
+        "label":        "Global Score Threshold",
+        "type":         "enum",
+        "values":       ["0", "5", "10", "20", "30", "40", "50", "60", "70", "80", "90", "100"],
+        "default":      "0"
+    },
+    {
+        "id":           "globals_enabled",
+        "label":        "Enable Global Tags",
+        "type":         "bool",
+        "default":      "false"
+    },
+    {
+        "id":           "remove_tags",
+        "label":        "Global Removed Tags",
+        "type":         "text"
+    },
+    {
+        "id":           "add_tags",
+        "label":        "Global Added Tags",
+        "type":         "text"
+    }
+]
